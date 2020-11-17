@@ -40,4 +40,12 @@ public class CompositeBehavior : FlockBehavior
 
         return move;
     }
+
+    public override void MoveFlockCenter(Vector3 newLocation)
+    {
+        for (int i = 0; i < behaviors.Length; i++)
+        {
+            behaviors[i].MoveFlockCenter(newLocation);
+        }
+    }
 }

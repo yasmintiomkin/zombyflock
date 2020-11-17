@@ -20,4 +20,9 @@ public class StayInRadiusBehavior : FlockBehavior
 
         return centerOffset * t * t; // pull back inside
     }
+
+    public override void MoveFlockCenter(Vector3 newLocation)
+    {
+        center = newLocation;
+    }
 }

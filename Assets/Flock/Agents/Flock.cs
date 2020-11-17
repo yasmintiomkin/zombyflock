@@ -107,4 +107,10 @@ public class Flock : MonoBehaviour
 
         return context;
     }
+
+    public void MoveFlockCenter(Vector3 newLocation)
+    {
+        behavior.MoveFlockCenter(newLocation);
+    }
+
 }
